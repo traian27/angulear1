@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="left-block">
+    <img src="assets/login_image.svg" alt="login image" class="login_image">
+    <img class="logo" src="assets/Logo.svg" alt="logo">
+    <div class="left-center-text">
+      <h2>Your ideal analytics platform</h2>
+      <span>Understanding clicks for successful marketing strategies</span>
+    </div>
+  </div>
+  <div class="right_block">
+    <div class="row_top">
+      <span>Don’t have an account?</span>
+      <a href="/register">Register</a>
+    </div>
+    <div class="auth-block">
+      <div class="auth-center">
+        <h2>Welcome back</h2>
+        <label class="label">
+          <span [ngClass]="emailFail.length ? 'red-color' : ''">Email Address</span>
+          <input [(ngModel)]="email"
+                 [ngClass]="emailFail.length ? 'input-error' : ''"
+                 type="text" placeholder="Email">
+          <p *ngIf="emailFail.length" class="input-error-text">{{emailFail}}</p>
+        </label>
+        <label class="label password">
+          <span [ngClass]="passwordFail.length ? 'red-color' : ''">Password</span>
+          <div>
+            <input [(ngModel)]="password" [ngClass]="passwordFail.length ? 'input-error' : ''" placeholder="Password" type="text">
+            <i class="icon-eye"></i>
+          </div>
+          <p *ngIf="passwordFail.length" class="input-error-text">{{passwordFail}}</p>
+        </label>
+
+        <div class="forgot-pass">
+          <a href="/reset-password">Forgot Password?</a>
+        </div>
+
+        <input (click)="login()" class="btn-blue mgt14" type="button" value="Sign In">
+
+        <input type="button" class="btn-ghost mgt14" value="Single-Sign-On">
+      </div>
+    </div>
+    <div class="login-footer">
+      <span>© 2023 VeriKlick. All Rights Reserved</span>
+    </div>
+  </div>
+</div>

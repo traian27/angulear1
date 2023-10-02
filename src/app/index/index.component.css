@@ -1,0 +1,88 @@
+.left-menu {
+  background: rgba(36, 36, 41, 1);
+  width: 192px;
+  height: 100vh;
+  padding: 0 0 344px 0px;
+  gap: 104px;
+}
+
+.logo {
+  width: 192px;
+  height: 64px;
+  gap: 6px;
+}
+
+
+.menu-item {
+  border-radius: 4px;
+  gap: 18px;
+}
+
+.menu-item a {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 16px 12px 16px 12px;
+  color: rgba(242, 242, 242, 1);
+  text-decoration: none;
+}
+
+.menu-item a:hover, .menu-item a:active {
+  color: rgba(86, 118, 230, 1);
+  border-left: 1px solid rgba(86, 118, 230, 1);
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  left: 192px;
+  padding: 6px 0px 6px 0px;
+  background: rgba(233, 235, 240, 1);
+  border-bottom: 1px solid rgba(233, 235, 240, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-menu {
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+}
+
+.search {
+  width: 320px;
+  padding: 20px 16px 20px 0px;
+  border-radius: 8px;
+  gap: 10px;
+  border: none;
+  margin-left: 18px;
+}
+
+.search::placeholder {
+  left: 20px;
+}
+
+.search-block{
+  position: relative;
+  width: 320px;
+  border-radius: 8px;
+  background: #ffffff;
+  gap: 10px;
+  border: none;
+}
+
+.icon-search{
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.logout{
+  cursor: pointer;
+}
